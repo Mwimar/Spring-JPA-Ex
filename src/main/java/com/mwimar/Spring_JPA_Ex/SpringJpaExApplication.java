@@ -5,6 +5,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+import java.util.Optional;
+
 @SpringBootApplication
 public class SpringJpaExApplication {
 
@@ -35,7 +37,8 @@ public class SpringJpaExApplication {
 
 //		System.out.println(repo.findAll());
 
-		System.out.println(repo.findById(202));
+		Optional<Student> s=repo.findById(205);
+		System.out.println(s.orElse(new Student()));
 	}
 
 }
