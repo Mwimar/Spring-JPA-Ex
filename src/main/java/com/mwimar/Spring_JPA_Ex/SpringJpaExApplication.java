@@ -12,6 +12,8 @@ public class SpringJpaExApplication {
 
 		ApplicationContext context = SpringApplication.run(SpringJpaExApplication.class, args);
 
+		StudentRepo repo = context.getBean(StudentRepo.class);
+
 		Student s1 = context.getBean(Student.class);
 		Student s2 = context.getBean(Student.class);
 		Student s3 = context.getBean(Student.class);
@@ -27,6 +29,8 @@ public class SpringJpaExApplication {
 		s3.setRollNo(203);
 		s3.setName("Nicky");
 		s3.setMarks(94);
+
+		repo.save(s1);
 	}
 
 }

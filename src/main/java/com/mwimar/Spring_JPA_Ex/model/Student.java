@@ -1,10 +1,12 @@
 package com.mwimar.Spring_JPA_Ex.model;
 
+import jakarta.persistence.Entity;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
 @Scope("prototype")
+@Entity
 public class Student {
     private int rollNo;
     private String name;
