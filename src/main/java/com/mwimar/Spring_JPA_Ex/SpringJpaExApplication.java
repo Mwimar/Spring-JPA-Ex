@@ -15,8 +15,18 @@ public class SpringJpaExApplication {
 		Student s1 = context.getBean(Student.class);
 		Student s2 = context.getBean(Student.class);
 		Student s3 = context.getBean(Student.class);
-		Student s4 = context.getBean(Student.class);
 
+		s1.setRollNo(201);
+		s1.setName("Gates");
+		s1.setMarks(74);
+
+		s2.setRollNo(202);
+		s2.setName("Abdul");
+		s2.setMarks(81);
+
+		s3.setRollNo(203);
+		s3.setName("Nicky");
+		s3.setMarks(94);
 	}
 
 }
