@@ -30,7 +30,8 @@ public class SpringJpaExApplication {
 		s3.setName("Nicky");
 		s3.setMarks(94);
 
-		repo.save(s1);
+		repo.save(s2);
+		repo.save(s3);
 	}
 
 }
