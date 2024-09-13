@@ -33,8 +33,9 @@ public class SpringJpaExApplication {
 //		repo.save(s2);
 //		repo.save(s3);
 
-		System.out.println(repo.findAll());
+//		System.out.println(repo.findAll());
 
+		System.out.println(repo.findById(202));
 	}
 
 }
