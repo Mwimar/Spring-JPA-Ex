@@ -16,13 +16,13 @@ public class SpringJpaExApplication {
 
 		StudentRepo repo = context.getBean(StudentRepo.class);
 
-//		Student s1 = context.getBean(Student.class);
-//		Student s2 = context.getBean(Student.class);
+		Student s1 = context.getBean(Student.class);
+		Student s2 = context.getBean(Student.class);
 		Student s3 = context.getBean(Student.class);
 //
-//		s1.setRollNo(201);
-//		s1.setName("Gates");
-//		s1.setMarks(74);
+		s1.setRollNo(201);
+		s1.setName("Gates");
+		s1.setMarks(74);
 //
 //		s2.setRollNo(202);
 //		s2.setName("Abdul");
@@ -33,7 +33,8 @@ public class SpringJpaExApplication {
 		s3.setMarks(96);
 //
 //		repo.save(s2);
-		repo.save(s3);
+//		repo.save(s3);
+		repo.delete(s1);
 
 //		System.out.println(repo.findAll());
 
