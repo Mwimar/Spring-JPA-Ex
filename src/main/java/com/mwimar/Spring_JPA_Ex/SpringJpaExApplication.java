@@ -37,9 +37,10 @@ public class SpringJpaExApplication {
 
 //		System.out.println(repo.findAll());
 
-		Optional<Student> s=repo.findById(201);
-		System.out.println(s.orElse(new Student()));
+//		Optional<Student> s=repo.findById(201);
+//		System.out.println(s.orElse(new Student()));
 		System.out.println(repo.findByName("Gates"));
+		System.out.println(repo.findByMarks(81));
 	}
 
 }
