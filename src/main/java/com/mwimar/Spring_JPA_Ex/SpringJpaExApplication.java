@@ -39,8 +39,9 @@ public class SpringJpaExApplication {
 
 //		Optional<Student> s=repo.findById(201);
 //		System.out.println(s.orElse(new Student()));
-		System.out.println(repo.findByName("Gates"));
-		System.out.println(repo.findByMarksLessThan(90));
+//		System.out.println(repo.findByName("Gates"));
+//		System.out.println(repo.findByMarksLessThan(90));
+		System.out.println(repo.findByMarksGreaterThan(90));
 	}
 
 }
